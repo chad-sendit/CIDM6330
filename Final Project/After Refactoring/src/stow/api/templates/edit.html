@@ -1,0 +1,21 @@
+{% extends 'base.html' %}
+
+{% block header %}
+  <h1>{% block title %}Edit a Pallet{% endblock %}</h1>
+{% endblock %}
+
+{% block content %}
+  <form method="post">
+    <ul>
+      <li><label for="storageSpot">Storage Spot</label>
+      <input name="storageSpot" id="storageSpot" required>
+      <li><label for="field">Choose an option</label>
+      <select id="field" name="field">
+         <option value="category">Category</option>
+         <option value="notes">Notes</option>
+      </select>
+      <li><label for="newValue">Enter new information</label>
+      <input name="newValue" id="newValue" required>
+      <li><input type="submit" value="Remove Pallet">
+  </form>
+{% endblock %}

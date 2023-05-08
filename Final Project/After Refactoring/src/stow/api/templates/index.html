@@ -1,0 +1,15 @@
+{% extends 'base.html' %}
+
+{% block header %}
+  <h1>{% block title %}Choose an Option{% endblock %}</h1>
+{% endblock %}
+
+{% block content %}
+  <ul>
+    <li><a class="action" href="{{ url_for('flaskapi.addPallet') }}">Add a Pallet</a>
+    <li><a class="action" href="{{ url_for('flaskapi.removePallet') }}">Remove a Pallet</a>
+    <li><a class="action" href="{{ url_for('flaskapi.editPallet') }}">Edit a Pallet</a>
+    <li><a class="action" href="{{ url_for('flaskapi.allPallets') }}">View Pallets</a>
+    <li><a class="action" href="{{ url_for('flaskapi.expiredPallets') }}">View Expired Pallet</a>
+  </ul>
+{% endblock %}

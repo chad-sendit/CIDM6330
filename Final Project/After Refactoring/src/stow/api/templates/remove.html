@@ -1,0 +1,14 @@
+{% extends 'base.html' %}
+
+{% block header %}
+  <h1>{% block title %}Remove a Pallet{% endblock %}</h1>
+{% endblock %}
+
+{% block content %}
+  <form method="post">
+    <ul>
+      <li><label for="storageSpot">Storage Spot</label>
+      <input name="storageSpot" id="storageSpot" required>
+      <li><input type="submit" value="Remove Pallet">
+  </form>
+{% endblock %}
